@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Three Card Poker</title>
+</head>
+	
+	<body>
+    
+    <canvas id="screen" width="1366" height="768"></canvas>
+<style>
+body{
+	background-image: url("/img/feltTable2.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.button {
+    background-color:#FF8C00; /* orange */
+    border: none;
+    color: white;
+    position: absolute;
+    bottom: 8%;
+    left: %;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover {background-color: #87CEEB}
+/*previous background color from:#3e8e41  to: #87CEEB; */
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.button4 {
+  background-color: #00FF00;
+  position: absolute;
+  bottom: 15%;
+  left: 85.25%;
+  display: inline-block;
+  text-decoration: none;
+  color: #555555;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #668ad8;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+}
+.button4:hover{
+	-webkit-transform: rotateY(360deg);
+	-ms-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+}
+.button5{
+  background-color: #00FF00;
+  position: absolute;
+  bottom: 5%;
+  right: 25%;
+  display: inline-block;
+  text-decoration: none;
+  color: #555555;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #668ad8;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+}
+.button5:hover{
+	-webkit-transform: rotateY(360deg);
+	-ms-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+}
+.button7{
+  background-color: #FFD700; /* Green */
+  position: absolute;
+  bottom: 18%;
+  right: 15%;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button8{
+  background-color: #DC143C; /* Green */
+  position: absolute;
+  bottom: 18%;
+  right: 2%;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.buttonAnte{
+	background-color:#FF8C00; /* orange */
+    border: none;
+    color: white;
+    position: absolute;
+    bottom: 8%;
+    right: 8.75%;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+</style>
+
+<button class = "button button4"> Play </button>
+
+<button class = "button buttonAnte"> Ante </button>
+<button class = "button button7"> Pair Plus</button>
+<button class = "button button8"> Prime </button>
+
+ 
+
+
+		<div id="card-table">
+			
+		</div>
+
+
+
+
+ <script src="/js/jquery-1.7.min.js"></script>
+	<!-- load this at the bottom so the #card-table element exists -->
+	<script src = "/js/cards.js"> </script>
+	<script src = "/js/example.js"> </script>
+	</body>
+</html>
